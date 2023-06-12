@@ -241,20 +241,22 @@ public class Movie extends BaseObservable implements Parcelable {
 
     @Override
     public void writeToParcel(@NonNull Parcel parcel, int i) {
-        parcel.writeValue(voteCount);
+        parcel.writeValue(adult);
+        parcel.writeValue(backdropPath);
+        //parcel.writeValue(genreIds);
         parcel.writeValue(id);
-        parcel.writeValue(video);
-        parcel.writeValue(voteAverage);
-        parcel.writeValue(title);
-        parcel.writeValue(popularity);
-        parcel.writeValue(posterPath);
         parcel.writeValue(originalLanguage);
         parcel.writeValue(originalTitle);
-        //parcel.writeValue(genreIds);
-        parcel.writeValue(backdropPath);
-        parcel.writeValue(adult);
         parcel.writeValue(overview);
+        parcel.writeValue(popularity);
+        parcel.writeValue(posterPath);
         parcel.writeValue(releaseDate);
+        parcel.writeValue(title);
+        parcel.writeValue(video);
+        parcel.writeValue(voteAverage);
+        parcel.writeValue(voteCount);
+
+
 
     }
 
